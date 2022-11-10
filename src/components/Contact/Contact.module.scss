@@ -1,0 +1,132 @@
+$bg-color: #020312;
+$text-color: #fff;
+$main-color: #eb4a4a;
+$second-color: gray;
+$other-color: #12141c;
+$h1-font: 5.2rem;
+$h2-font: 3.5rem;
+$p-font: 1.1rem;
+.root {
+  background-color: #dbeef4;
+}
+.contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 3rem;
+}
+.text {
+  h4 {
+    margin: 15px 0;
+    color: $main-color;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  h2 {
+    font-size: $h2-font;
+  }
+  p {
+    color: $second-color;
+    font-size: $p-font;
+    line-height: 30px;
+    margin-bottom: 2rem;
+  }
+}
+.list {
+  margin-bottom: 3rem;
+  li {
+    margin-bottom: 10px;
+    display: block;
+    a {
+      display: block;
+      color: $second-color;
+      font-size: $p-font;
+      font-weight: 600;
+      transition: all 0.4s ease;
+      &:hover {
+        transform: scale(1.01) translateY(-5px);
+        color: $main-color;
+      }
+    }
+  }
+}
+.icons {
+  i {
+    height: 40px;
+    width: 40px;
+    background: #d4e8ef;
+    border-radius: 0.5rem;
+    color: $main-color;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    margin-right: 10px;
+    transition: all 0.4s ease;
+    &:hover {
+      transform: scale(1.01) translateY(-5px);
+      color: $text-color;
+      background: $main-color;
+    }
+  }
+}
+.form {
+  form {
+    position: relative;
+    .send {
+      display: inline-block;
+      font-size: 17px;
+      font-weight: 500;
+      background: $main-color;
+      color: $text-color;
+      width: 190px;
+      transition: all 0.4s ease;
+      cursor: pointer;
+    }
+  }
+  textarea {
+    resize: none;
+    height: 220px;
+  }
+}
+.form form input,
+form textarea {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 18px;
+  background: #d4e8ef;
+  color: $text-color;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+section {
+  padding: 160px 16% 90px;
+  padding: 130px 3% 60px;
+  padding: 70px 3% 60px;
+}
+@media (max-width: 1325px) {
+  section {
+    padding: 130px 3% 60px;
+  }
+}
+@media (max-width: 970px) {
+  $h1-font: 4.2rem;
+  $h2-font: 2.9rem;
+  $p-font: 1rem;
+
+  section {
+    padding: 70px 3% 60px;
+  }
+
+  .contact {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 830px) {
+  $h1-font: 3.7rem;
+  $h2-font: 2.7rem;
+}

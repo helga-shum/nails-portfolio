@@ -1,0 +1,134 @@
+$bg-color: #020312;
+$text-color: #fff;
+$main-color: #eb4a4a;
+$second-color: gray;
+$other-color: #12141c;
+$h1-font: 5.2rem;
+$h2-font: 3.5rem;
+$p-font: 1.1rem;
+.root {
+  background-color: #dbeef4;
+}
+.content {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+.text {
+  text-align: center;
+  h2 {
+    font-size: $h2-font;
+    margin-bottom: 10px;
+  }
+  h4 {
+    color: $main-color;
+    font-size: 24px;
+    font-weight: 600;
+  }
+}
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  margin-top: 5rem;
+  padding: 20px;
+}
+.row {
+  padding: 25px;
+  background: #d4e8ef;
+  border-radius: 0.5rem;
+  transition: all 0.4s ease;
+  img {
+    height: auto;
+    width: 100%;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  h3 {
+    font-size: 25px;
+    font-weight: 700;
+  }
+  h6 {
+    color: $main-color;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+  &:hover {
+    transform: scale(1.01) translateY(-5px);
+    cursor: pointer;
+  }
+}
+.gri {
+  display: block;
+  text-align: start;
+  align-items: center;
+
+  margin-bottom: 3rem;
+}
+.in {
+  h5 {
+    font-size: 15px;
+    font-weight: 600;
+  }
+}
+.box {
+  padding: 45px;
+  background: #d4e8ef;
+  border-top: 5px solid transparent;
+  border-radius: 0.5rem;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 15px 0;
+    transition: all 0.4s ease;
+  }
+  p {
+    color: $other-color;
+    font-size: $p-font;
+    line-height: 30px;
+  }
+  &:hover {
+    transform: scale(1.01) translateY(-5px);
+    border-top: 5px solid $main-color;
+    h3 {
+      color: $main-color;
+    }
+  }
+}
+.img {
+  img {
+    height: auto;
+    width: 100%;
+    max-width: 460px;
+  }
+}
+section {
+  padding: 160px 16% 90px;
+  padding: 130px 3% 60px;
+  padding: 70px 3% 60px;
+}
+@media (max-width: 1325px) {
+  section {
+    padding: 130px 3% 60px;
+  }
+}
+@media (max-width: 970px) {
+  $h1-font: 4.2rem;
+  $h2-font: 2.9rem;
+  $p-font: 1rem;
+
+  section {
+    padding: 70px 3% 60px;
+  }
+}
+@media (max-width: 830px) {
+  $h1-font: 3.7rem;
+  $h2-font: 2.7rem;
+}

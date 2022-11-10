@@ -1,0 +1,85 @@
+$bg-color: #020312;
+$text-color: #fff;
+$main-color: #eb4a4a;
+$second-color: gray;
+$other-color: #12141c;
+$h1-font: 5.2rem;
+$h2-font: 3.5rem;
+$p-font: 1.1rem;
+.root {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background: url(../../../public/img/background.jpg);
+  background-color: #dbeef4;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.text {
+  h1 {
+    color: $text-color;
+    margin: 20px 0;
+    font-size: $h1-font;
+    font-weight: bold;
+    line-height: 1.1;
+    letter-spacing: 2px;
+  }
+  h4 {
+    color: $main-color;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 3rem;
+  }
+}
+span {
+  color: $main-color;
+}
+.btn {
+  display: inline-block;
+  padding: 14px 40px;
+  border-radius: 0.5rem;
+  font-size: 17px;
+  font-weight: 500;
+  background: $main-color;
+  color: $text-color;
+  border: 1px solid $main-color;
+  transition: all 0.4s ease;
+  &:hover {
+    transform: scale(1.01) translateY(-5px);
+    background: transparent;
+    border: 1px solid $main-color;
+  }
+}
+section {
+  padding: 160px 16% 90px;
+  padding: 130px 3% 60px;
+  padding: 70px 3% 60px;
+}
+@media (max-width: 1325px) {
+  section {
+    padding: 130px 3% 60px;
+  }
+}
+@media (max-width: 970px) {
+  $h1-font: 4.2rem;
+  $h2-font: 2.9rem;
+  $p-font: 1rem;
+
+  section {
+    padding: 70px 3% 60px;
+  }
+  .root {
+    height: 85vh;
+  }
+}
+@media (max-width: 830px) {
+  $h1-font: 3.7rem;
+  $h2-font: 2.7rem;
+}

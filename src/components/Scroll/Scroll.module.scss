@@ -1,0 +1,50 @@
+$bg-color: #020312;
+$text-color: #fff;
+$main-color: #eb4a4a;
+$second-color: gray;
+$other-color: #12141c;
+$h1-font: 5.2rem;
+$h2-font: 3.5rem;
+$p-font: 1.1rem;
+.root {
+  position: fixed;
+  bottom: 2.1rem;
+  right: 2.1rem;
+  i {
+    color: $text-color;
+    background: $main-color;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 0.5rem;
+  }
+}
+@media (max-width: 1325px) {
+  section {
+    padding: 130px 3% 60px;
+  }
+}
+@media (max-width: 970px) {
+  $h1-font: 4.2rem;
+  $h2-font: 2.9rem;
+  $p-font: 1rem;
+
+  section {
+    padding: 70px 3% 60px;
+  }
+  .home {
+    height: 85vh;
+  }
+  .about {
+    grid-template-columns: 1fr;
+  }
+  .about-img {
+    text-align: center;
+  }
+  .contact {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 830px) {
+  $h1-font: 3.7rem;
+  $h2-font: 2.7rem;
+}
