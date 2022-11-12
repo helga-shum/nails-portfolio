@@ -1,0 +1,64 @@
+[{
+  "_id": {
+    "$oid": "636e4997bd9c1cf3e58378d3"
+  },
+  "imageUrl": "https://i.postimg.cc/hhR4SkhX/IMG-20221010-183012-622-3.jpg",
+  "price": 300,
+  "text": "Alignment of the nail plate, one-color coating with design"
+},{
+  "_id": {
+    "$oid": "636e4997bd9c1cf3e58378d4"
+  },
+  "imageUrl": "https://i.postimg.cc/P5Rf6Vkv/IMG-20220920-114853-328.jpg",
+  "price": 330,
+  "text": "Gentle french. Nail extensions correction is performed"
+},{
+  "_id": {
+    "$oid": "636e4997bd9c1cf3e58378d5"
+  },
+  "imageUrl": "https://i.postimg.cc/V6dZXbrX/IMG-20221012-132040-739-1.jpg",
+  "price": 330,
+  "text": "Rich and deep color with french. Classics new way"
+},{
+  "_id": {
+    "$oid": "636e4997bd9c1cf3e58378d6"
+  },
+  "imageUrl": "https://i.postimg.cc/YqGxq36N/IMG-20221014-132338-275.jpg",
+  "price": 300,
+  "text": "Strengthening manicure. Extension and correction"
+},{
+  "_id": {
+    "$oid": "636e4997bd9c1cf3e58378d7"
+  },
+  "imageUrl": "https://i.postimg.cc/P5bYPFPD/IMG-20221028-132408-203.jpg",
+  "price": 300,
+  "text": "Smoothing, building and matte finish. Foil design"
+},{
+  "_id": {
+    "$oid": "636e4997bd9c1cf3e58378d8"
+  },
+  "imageUrl": "https://i.postimg.cc/0NWfyHBf/IMG-20221101-173812-868.jpg",
+  "price": 250,
+  "text": "Alignment og the nail plate and a bright coating"
+},{
+  "_id": {
+    "$oid": "636e4997bd9c1cf3e58378d9"
+  },
+  "imageUrl": "https://i.postimg.cc/CL6H7HLw/IMG-20220813-171632-042.jpg",
+  "price": 250,
+  "text": "Great length and bright coverage. Leveling and coating with reflective varnish"
+},{
+  "_id": {
+    "$oid": "636e4997bd9c1cf3e58378da"
+  },
+  "imageUrl": "https://i.postimg.cc/Dwcn4TVN/IMG-20220906-173934-3.jpg",
+  "price": 320,
+  "text": "Extension of nails, aligment, strengthening, oating and design with rhinestones"
+},{
+  "_id": {
+    "$oid": "636f684e60ce0a4f680fd5ca"
+  },
+  "imageUrl": "https://i.postimg.cc/hhR4SkhX/IMG-20221010-183012-622-3.jpg",
+  "price": 300,
+  "text": "Alignment of the nail plate, one-color coating with design"
+}]
