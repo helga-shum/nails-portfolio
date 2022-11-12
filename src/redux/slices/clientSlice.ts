@@ -1,10 +1,16 @@
 import { createSlice, PayloadAction, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from '../../axios.js';
 
-export const fetchClient = createAsyncThunk('client/fetchClient', async (params) => {
-  const { data } = await axios.post('/', params);
-  return data;
-});
+export const fetchClient = createAsyncThunk(
+  'client/fetchClient',
+  async (params: { name: string; email: string; phone: string; message: string }) => {
+    const { data } = await axios.post('/', params);
+    return data;
+  },
+);
+export type clientSliceType = {
+  data: {};
+};
 const initialState = {
   data: null,
   status: 'loading',

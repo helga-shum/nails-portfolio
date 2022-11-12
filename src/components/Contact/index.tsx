@@ -1,6 +1,33 @@
+import { Button, TextField } from '@mui/material';
 import React from 'react';
+import { useForm } from 'react-hook-form';
+import { fetchClient } from '../../redux/slices/clientSlice';
+import { useAppDispatch } from '../../redux/store';
 import styles from './Contact.module.scss';
 const Contact: React.FC = () => {
+  const dispatch = useAppDispatch();
+  const onSubmit = async (values: {
+    name: string;
+    email: string;
+    phone: string;
+    message: string;
+  }) => {
+    await dispatch(fetchClient(values));
+  };
+  const {
+    register,
+    handleSubmit,
+
+    formState: { errors, isValid },
+  } = useForm({
+    defaultValues: {
+      name: 'Helga Neimer',
+      email: 'helga.neimer@gmail.com',
+      phone: '+48787499194',
+      message: 'Can I come at 14 pm',
+    },
+    mode: 'onChange',
+  });
   return (
     <div className={styles.root}>
       <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
@@ -40,18 +67,48 @@ const Contact: React.FC = () => {
         </div>
 
         <div className={styles.form}>
-          <form action="">
-            <input type="" placeholder="Enter Your Name" required />
-            <input type="email" placeholder="Enter Your Email" required />
-            <input type="" placeholder="Enter Your Phone" />
-            <textarea
-              name=""
-              id=""
-              cols={40}
-              rows={10}
-              placeholder="Enter Your Message"
-              required></textarea>
-            <input type="submit" value="Submit" className={styles.send} />
+          <form onSubmit={handleSubmit(onSubmit)}>
+            <TextField
+              error={Boolean(errors.name?.message)}
+              helperText={errors.name?.message}
+              {...register('name', { required: 'Write your fullname' })}
+              className={styles.field}
+              label="Full name"
+              fullWidth
+            />
+            <TextField
+              error={Boolean(errors.email?.message)}
+              helperText={errors.email?.message}
+              {...register('email', { required: 'Write your email' })}
+              className={styles.field}
+              label="email"
+              fullWidth
+            />
+            <TextField
+              error={Boolean(errors.phone?.message)}
+              helperText={errors.phone?.message}
+              {...register('phone', { required: 'Write your phone' })}
+              className={styles.field}
+              label="phone"
+              fullWidth
+            />
+            <TextField
+              error={Boolean(errors.message?.message)}
+              helperText={errors.message?.message}
+              {...register('message', { required: 'Write your message' })}
+              className={styles.field}
+              label="message"
+              fullWidth
+            />
+            <Button
+              disabled={!isValid}
+              className={styles.send}
+              type="submit"
+              size="large"
+              variant="contained"
+              fullWidth>
+              submit
+            </Button>
           </form>
         </div>
       </section>
