@@ -17,6 +17,7 @@ $p-font: 1.1rem;
   margin-top: 5rem;
 }
 .row {
+  height: 100%;
   padding: 25px;
   background: #d4e8ef;
   border-radius: 0.5rem;
@@ -40,6 +41,22 @@ $p-font: 1.1rem;
   &:hover {
     transform: scale(1.01) translateY(-5px);
     cursor: pointer;
+  }
+}
+.btn {
+  display: inline-block;
+  padding: 14px 40px;
+  border-radius: 0.5rem;
+  font-size: 17px;
+  font-weight: 500;
+  background: $main-color;
+  color: $text-color;
+  border: 1px solid $main-color;
+  transition: all 0.4s ease;
+  &:hover {
+    transform: scale(1.01) translateY(-5px);
+    background: transparent;
+    border: 1px solid $main-color;
   }
 }
 .mainRow {

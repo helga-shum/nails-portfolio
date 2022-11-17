@@ -1,5 +1,5 @@
 import { TabContext, TabList } from '@mui/lab';
-import { Tab } from '@mui/material';
+import { getSelectUtilityClasses, Tab } from '@mui/material';
 import React from 'react';
 import styles from './Services.module.scss';
 

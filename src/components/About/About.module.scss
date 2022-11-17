@@ -7,12 +7,14 @@ $h1-font: 5.2rem;
 $h2-font: 3.5rem;
 $p-font: 1.1rem;
 .root {
+  padding: 100px;
   display: grid;
+  height: 100%;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   gap: 2rem;
-  background-color: #dbeef4;
 }
+
 .text {
   h4 {
     margin: 10px 0;

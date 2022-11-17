@@ -5,6 +5,7 @@
   "dependencies": {
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.10.14",
     "@mui/lab": "^5.0.0-alpha.106",
     "@mui/material": "^5.10.12",
     "@reduxjs/toolkit": "^1.9.0",
@@ -15,6 +16,8 @@
     "flickity": "^2.3.0",
     "nuka-carousel": "^5.4.0",
     "react": "^18.2.0",
+    "react-animated-slider": "^1.1.4",
+    "react-content-loader": "^6.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.39.3",
     "react-redux": "^8.0.5",

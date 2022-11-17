@@ -6,7 +6,7 @@ type ItemProps = {
   price: number;
   text: string;
 };
-const Item: React.FC<ItemProps> = ({ _id, imageUrl, price, text }) => {
+const PortfolioItem: React.FC<ItemProps> = ({ _id, imageUrl, price, text }) => {
   return (
     <>
       <div className={styles.row}>
@@ -22,4 +22,4 @@ const Item: React.FC<ItemProps> = ({ _id, imageUrl, price, text }) => {
   );
 };
 
-export default Item;
+export default PortfolioItem;
