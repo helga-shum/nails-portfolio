@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const instance = axios.create({
-  baseURL: 'http://localhost:1111',
+  baseURL: 'https://nails-backend.vercel.app',
 });
 instance.interceptors.request.use((config) => {
   config.headers.Authorization = window.localStorage.getItem('token');
